@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: white) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -30,4 +30,769 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+/*navbar*/
+
+
+body {
+  width: 100vw;
+  height: auto;
+  box-shadow: 0px 7px 10px 0px #0000001A;
+  margin: 0;
+}
+
+.container {
+  width: 1112px;
+  height: 51px;
+  margin: 35px auto 0;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  position: relative; /* Ensure the navbar is positioned correctly */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+.nav-link-about {
+  width: 156px;
+  height: 51px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 34.11px;
+  font-weight: 600;
+  line-height: 51.17px;
+  text-align: center;
+  color: #D10B0B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+}
+
+/* About the Journey Section */
+
+.about-the-journey-container {
+  width: 1920px;
+  height: 987px;
+  top: 120px;
+  gap: 0px;
+  opacity: 1px;  
+}
+
+.image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.image-container2 {
+  position: absolute;
+  top: 400.5px; /* Adjusted top to move the image further down */
+  right: 1rem;
+  transform: translateY(-50%) scale(0.8); /* Scaled down to 80% of the original size */
+  z-index: 2;
+  width: 603px; /* Original width */
+  height: 734.7px; /* Original height */
+}
+
+.image-container img,
+.image-container2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  position: absolute;
+  top: 100px; /* Adjust as needed to position header */
+  left: 50%; /* Center the header horizontally */
+  transform: translateX(-50%); /* Center the header horizontally */
+  width: 100%; /* Ensure header spans full width */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.header h1,
+.header h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  color: #FFFFFF;
+  background: transparent;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: auto; /* Adjust width based on content */
+  height: auto; /* Allow height to adjust based on content */
+}
+
+.header h1 {
+  font-size: 145px;
+  font-weight: 800;
+  line-height: 139.31px;
+  letter-spacing: 0.1em;
+}
+
+.header h2 {
+  font-size: 155px;
+  font-weight: 800;
+  line-height: 175px;
+  letter-spacing: 4px;
+  margin: 0;
+  position: relative; /* Ensure it’s correctly positioned within its parent */
+}
+
+/*vidharbha*/
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  position: relative; /* add this line */
+  z-index: -1; /* add this line */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.h1-container {
+  width: 798px;
+  height: 23px;
+  position: relative; /* Added to ensure proper positioning */
+  top: -250px; /* Reduced top value to move it up */
+  left: 50%; /* Centered horizontally */
+  transform: translateX(-50%); /* Centered horizontally */
+  display: flex; /* Added for alignment */
+  flex-direction: column; /* Added for alignment */
+  gap: 0px;
+  opacity: 1; /* Corrected from 1px to 1 */
+}
+
+.h1-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30.8px;
+  font-weight: 700;
+  line-height: 22.63px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #D10B0B;
+  white-space: nowrap;
+  margin: 0;
+}
+
+
+.h1-container h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 99px;
+  text-align: center;
+  color: #2E2754;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+.p-container {
+  width: 100%;
+  max-width: 1304px;
+  margin: 0 auto; /* Adjusted margin to move section up */
+  padding: 0 20px;
+}
+
+.p-container p {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: center;
+  color: #38465F;
+  margin-top: -50px; /* Reduced margin to move paragraph up */
+  padding: 0;
+}
+
+
+.img-container img {
+  width: 599px;
+  height: 574px;
+  position: absolute;
+  top: 1600px; /* moved the image 50px up */
+  right: 710px;
+  gap: 0px;
+  opacity: 1;
+  transform: scale(0.8); /* scales the image to 80% of its original size */
+  z-index: 1; /* add this line */
+}
+
+.list-container {
+  position: absolute;
+  width: 534px;
+  height: auto;
+  top: 1640px;
+  right: 100px;
+  color: #38465F;
+  padding: 20px;
+  gap: 0px;
+  opacity: 1;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  z-index: 1; /* add this line */
+}
+
+.list-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-container li {
+  padding: 10px;
+  color: #38465F;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.list-container li::before {
+  content: "\2605";
+  font-size: 14px;
+  color: #38465F;
+  margin-right: 10px;
+}
+
+.list-container li:last-child {
+  margin-bottom: 0;
+}
+
+/*fact*/
+
+.heading-containerf {
+  width: 499px;
+  height: 163px;
+  position: absolute;
+  top: 2400px; /* Adjusted distance from the top */
+  left: 216px; /* Distance from the left */
+  gap: 0px;
+  opacity: 1;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.heading-containerf h1 {
+  width: 418px;
+  height: 23px;
+  gap: 0px;
+  opacity: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 22.63px;
+  letter-spacing: 4px;
+  text-align: left;
+  color: #D10B0B;
+  padding: 5px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.heading-containerf h2 {
+  width: 317px;
+  height: 140px;
+  gap: 0px;
+  opacity: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 139.31px;
+  text-align: left;
+  color: #201E6B;
+  background: none;
+  margin: 0;
+}
+
+.paragraph-containerf {
+  width: 1492px;
+  height: 220px;
+  position: absolute;
+  top: 2600px; /* Adjusted distance from the top */
+  left: 212px;
+  gap: 0px;
+  opacity: 1;
+  text-align: left;
+}
+
+.paragraph-containerf p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #38465F;
+  margin: 0;
+  padding: 20px;
+}
+
+.lorem-text-container {
+  width: 1020px; /* Set the width of the container */
+  height: auto; /* Height adjusts to fit content */
+  position: absolute; /* Positioning the container absolutely */
+  top: 3100px; /* Distance from the top (adjust as needed) */
+  left: 300px; /* Move the container slightly to the right */
+  transform: translateX(0%); /* Adjust for horizontal centering if needed */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute space around items */
+  align-items: center; /* Center items vertically */
+}
+
+.lorem-text-item-container1 {
+  width: 225px; /* Set width */
+  height: 35px; /* Set height */
+  color: #D10B0B; /* Background color (was color previously) */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  text-decoration: underline; /* Add underline to text */
+}
+
+.lorem-text-item-container {
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add padding if needed */
+}
+
+.lorem-text-item {
+  font-family: 'Poppins', sans-serif; /* Font family */
+  font-size: 20px; /* Font size */
+  font-weight: 500; /* Font weight */
+  color: #2E2754; /* Text color */
+  padding: 10px; /* Padding around text */
+  text-align: center; /* Center text inside each item */
+  text-decoration: underline; /* Add underline to text */
+}
+
+/* Adjust spacing between items */
+.lorem-text-item-container + .lorem-text-item-container {
+  margin-left: 5px; /* Decrease spacing between items */
+}
+
+.fact-image-container {
+  width: 1320px; /* Set the width of the image container */
+  height: 500px; /* Set the height of the image container */
+  position: absolute; /* Positioning the container absolutely */
+  top: 3337px; /* Distance from the top */
+  left: 212px; /* Distance from the left */
+  gap: 0px; /* No gap between items */
+  opacity: 1; /* Ensure the image container is visible */
+}
+
+.fact-image-container img {
+  width: 732px;
+  height: 500px;
+  left: -0.48px;
+  gap: 0px;
+  opacity: 1;  
+}
+
+.paragraph-containerf2 {
+  width: 687px; /* Set width */
+  height: 264px; /* Adjust height to fit content */
+  position: relative; /* Relative positioning */
+  top: 1900px; /* Distance from the top */
+  left: 784px; /* Distance from the left */
+  gap: 0px; /* Gap between elements */
+  opacity: 1; /* Set opacity */
+  font-family: 'Poppins', sans-serif; /* Font family */
+  font-size: 25px; /* Reduced font size */
+  font-weight: 400; /* Font weight */
+  line-height: 30px; /* Adjusted line height for smaller text */
+  text-align: left; /* Text alignment */
+  color: #38465F; /* Text color */
+  padding: 20px; /* Padding inside the container */
+  border-radius: 5px; /* Border radius for rounded corners */
+}
+
+.paragraph-containerf2::before {
+  content: ""; /* Label text */
+  display: block; /* Make label appear on its own line */
+  font-family: 'Poppins', sans-serif; /* Font family for label */
+  font-size: 25px; /* Slightly larger font size for the label */
+  font-weight: 400; /* Bold weight for the label */
+  color: #2E2754; /* Color for the label */
+  margin-bottom: 10px; /* Space between label and paragraph text */
+}
+
+/* Career highlights*/
+
+/* Career Highlights Container */
+.career-container {
+  width: 100%; /* Full width */
+  padding: 20px; /* Padding around the container */
+  margin: 0 auto; /* Center the container horizontally */
+  text-align: center; /* Center the text inside the container */
+  background-color: #f9f9f9;
+
+}
+
+/* Career Highlights Title */
+.title-career {
+  width: 842px; /* Set width */
+  height: auto; /* Auto height */
+  margin: 2300px auto 50px; /* Add top margin to move the title down */
+  gap: 0px; /* No gap */
+  opacity: 1; /* Set opacity */
+  font-family: 'Poppins', sans-serif; /* Font family */
+  font-size: 80px; /* Font size */
+  font-weight: 700; /* Font weight */
+  line-height: 95.7px; /* Line height */
+  letter-spacing: 2px; /* Letter spacing */
+  text-align: center; /* Text alignment */
+  color: #201E6B; /* Background color */
+  padding: 10px; /* Padding inside the title */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+.career-highlights {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 150px; /* Space between items */
+  margin-top: 20px; /* Space above the container */
+  width: 1316px;
+  height: 1886px;
+  top: 4319px;
+  left: 302px;
+}
+
+/* Highlight Common Styles */
+/* Highlight Common Styles */
+.highlight,
+.highlight3 {
+  display: flex; /* Use flexbox to align children horizontally */
+  flex-direction: row; /* Align children in a row */
+  align-items: center; /* Center items vertically within the row */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the highlight */
+  width: 1301px; /* Fixed width for each highlight item */
+  height: 359px; /* Fixed height for each highlight item */
+  gap: 20px; /* Add a gap between the image and content */
+  opacity: 1; /* Fully visible */
+  position: relative; /* Ensure positioning is relative */
+}
+
+/* Player Image Styles */
+.player-image ,
+.player-image3{
+  width: 350px;
+  height: 350px;
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 0; /* Remove margin-right */
+}
+
+/* Highlight Content Styles */
+.highlight-content,
+.highlight-content3 {
+  width: calc(100% - 370px); /* Adjust width to fit content next to the image */
+  height: auto; /* Allow height to adjust based on content */
+  opacity: 1; /* Make sure the content is visible */
+  font-family: 'Poppins', sans-serif; /* Font family */
+  color: #333; /* Text color */
+}
+
+/* Heading Styles */
+.highlight-content h3,
+ .highlight-content {
+  font-family: 'Poppins', sans-serif; /* Font family */
+  font-size: 25px; /* Font size */
+  font-weight: 700; /* Font weight */
+  line-height: 36px; /* Line height (match height for vertical centering) */
+  letter-spacing: 2px; /* Letter spacing */
+  text-align: center; /* Center the text */
+  opacity: 1; /* Make sure the text is visible */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  color: #201E6B; /* Text color */
+}
+
+/* Paragraph Styles */
+.highlight-content p,
+.highlight-content3 {
+  margin-top: 20px; /* Move the paragraph down */
+  font-family: 'Poppins', sans-serif; /* Font family */
+  font-size: 25px; /* Font size */
+  font-weight: 500; /* Font weight */
+  line-height: 44px; /* Line height */
+  text-align: left; /* Align text to the left */
+  color: #38465F; /* Text color */
+  padding: 10px; /* Add padding inside the paragraph */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+/* Highlight 2 and Highlight 4 Styles */
+.highlight2, .highlight4 {
+  display: flex; /* Use flexbox to align children horizontally */
+  flex-direction: row-reverse; /* Align children with image on the right and content on the left */
+  align-items: center; /* Center items vertically within the row */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the highlight */
+  width: 1316px; /* Fixed width for each highlight item */
+  height: 359px; /* Fixed height for each highlight item */
+  gap: 20px; /* Add a gap between the image and content */
+  opacity: 1; /* Fully visible */
+  position: relative; /* Ensure positioning is relative */
+  margin-top: 50px; /* Add margin-top to ensure space between sections */
+}
+
+/* Player Image 2 and 4 Styles */
+.player-image2, .player-image4 {
+  width: 350px;
+  height: 350px;
+  border-radius: 5px; /* Rounded corners */
+  margin-left: 0; /* Ensure margin-left is adjusted correctly */
+}
+
+/* Highlight Content 2 and 4 Styles */
+.highlight-content2, .highlight-content4 {
+  width: calc(100% - 370px); /* Adjust width to fit content next to the image */
+  height: auto; /* Allow height to adjust based on content */
+  opacity: 1; /* Make sure the content is visible */
+  font-family: 'Poppins', sans-serif; /* Font family */
+  color: #333; /* Text color */
+}
+
+/* Heading Styles for Highlight Content 2 and 4 */
+.highlight-content2 h3, .highlight-content4 h3 {
+  font-family: 'Poppins', sans-serif; /* Font family */
+  font-size: 25px; /* Font size */
+  font-weight: 700; /* Font weight */
+  line-height: 36px; /* Line height (matches height for vertical centering) */
+  letter-spacing: 2px; /* Letter spacing */
+  text-align: center; /* Center the text */
+  opacity: 1; /* Ensure the text is fully visible */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  color: #201E6B; /* Text color */
+}
+
+/* Paragraph Styles for Highlight Content 2 and 4 */
+.highlight-content2 p, .highlight-content4 p {
+  margin-top: 20px; /* Move the paragraph down */
+  font-family: 'Poppins', sans-serif; /* Font family */
+  font-size: 25px; /* Font size */
+  font-weight: 400; /* Font weight */
+  line-height: 44px; /* Line height */
+  text-align: left; /* Align text to the left */
+  padding: 10px; /* Add padding inside the paragraph */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  color: #38465F; /* Text color */
+}
+
+
+
+/* Link Styles */
+.highlight-content a,
+.highlight-content2 a,
+.highlight-content3 a,
+.highlight-content4 a {
+  color: #201E6B; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Font weight for the link */
+}
+
+.highlight-content a:hover,
+.highlight-content2 a:hover,
+.highlight-content3 a:hover,
+.highlight-content4 a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/*footer*/
+
+.footer-main-container {
+  width: 1920px;
+  height: 1427px;
+  position: relative;
+  border: 1px solid #000000;
+  background: #04151E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1200px; /* Optional: Limit the width of the footer */
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer h1 {
+  width: 447px;
+  height: 100px;
+  border: 4px solid #FFFFFF; /* Set border */
+  font-family: 'Lato', sans-serif;
+  font-size: 82.82px;
+  font-weight: 700;
+  line-height: 99.38px;
+  letter-spacing: 3.31px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h2 {
+  width: 603px;
+  height: 100px;
+  border: 4px solid #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 82.82px;
+  font-weight: 700;
+  line-height: 99.38px;
+  letter-spacing: 3.31px;
+  text-align: right;
+  margin: 20px auto; /* Add margin for spacing */
+}
+
+.footer h3 {
+  width: 458px;
+  height: 174px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 108px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 40px auto; /* Add margin for spacing */
+}
+
+.footer .p1, .footer .p2 {
+  width: 731px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: right;
+  color: #FFFFFF;
+  margin: 20px auto; /* Add margin for spacing */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer .social-icons {
+  width: auto; /* Adjust to fit content */
+  height: 50px; /* Adjust height */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Center icons vertically */
+  gap: 26px; /* Space between icons */
+  margin: 20px auto; /* Margin around social icons */
+}
+
+.footer .social-icons a {
+  display: flex; /* Ensure anchor tag wraps image properly */
+}
+
+.footer .social-icons img {
+  width: 50px; /* Size of each icon */
+  height: 50px; /* Size of each icon */
+}
+
+.footer .contact {
+  width: 949px; /* Set width of the contact section */
+  height: 35px; /* Set height of the contact section */
+  font-family: 'Lato', sans-serif; /* Font family */
+  font-size: 30px; /* Font size */
+  font-weight: 900; /* Font weight */
+  line-height: 34.5px; /* Line height */
+  letter-spacing: 3px; /* Letter spacing */
+  text-align: left; /* Text alignment */
+  color: #FFFFFF; /* Text color */
+  margin: 20px auto 40px; /* Margin with added bottom margin for spacing */
+  padding: 10px; /* Padding inside the contact section */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.footer .contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .contact a:hover {
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  width: 760px; /* Set width of the copyright section */
+  height: 35px; /* Set height of the copyright section */
+  font-family: 'Lato', sans-serif; /* Font family */
+  font-size: 20px; /* Font size */
+  font-weight: 900; /* Font weight */
+  line-height: 34.5px; /* Line height */
+  letter-spacing: 3px; /* Letter spacing */
+  text-align: left; /* Text alignment */
+  color: #FFFFFF; /* Text color */
+  margin: 0 auto; /* Center horizontally */
+  padding: 10px; /* Padding inside the copyright section */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
