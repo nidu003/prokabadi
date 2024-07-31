@@ -25,6 +25,7 @@ const AboutTheJourney = () => {
             height={734.7}
           />
         </div>
+        <div className="triangle"></div>
       </div>
     </div>
   );

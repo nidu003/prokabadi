@@ -5,8 +5,8 @@ import Image from 'next/image';
 const Navbar = () => {
   return (
     <nav className="navbar bg-black text-white py-4 px-8">
-      <div className="container mx-auto flex justify-between items-center">
-        <ul className="navbar-nav flex space-x-6">
+      <div className="container mx-auto flex flex-wrap justify-between items-center">
+        <ul className="navbar-nav flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
           <li className="nav-item">
             <Link href="/" legacyBehavior>
               <a className="nav-link font-bold text-xl">Home</a>
@@ -33,7 +33,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <ul className="social-links flex space-x-6">
+        <ul className="social-links flex space-x-6 mt-4 md:mt-0">
           <li>
             <a href="#" target="_blank" rel="noopener noreferrer">
               <Image src="/facebook.svg" alt="Facebook" width={24} height={24} />

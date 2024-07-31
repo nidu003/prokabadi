@@ -34,6 +34,7 @@ export default function Home() {
             sodales odio augue, eget bibendum nisl sodales eu.
           </p>
         </div>
+        
         {/* Image Section */}
         <div className="img-container">
           <Image
