@@ -41,7 +41,12 @@ const Fact = () => {
       </div>
       <div className="paragraph-containerf2">
         <p>
-        Integer eget fringilla nibh, vitae tincidunt mi. Sed risus ligula, congue eget iaculis eu, maximus et nisl. In fringilla mauris in dui feugiat, vitae faucibus neque volutpat. Sed ultricies dui vel nunc euismod posuere. Curabitur consectetur erat eros, sed aliquam tortor vestibulum ac. Proin in sollicitudin 
+        Integer eget fringilla nibh, vitae tincidunt mi. Sed risus
+        ligula, congue eget iaculis eu, maximus et nisl. In 
+        fringilla mauris in dui feugiat, vitae faucibus neque 
+        volutpat. Sed ultricies dui vel nunc euismod posuere. 
+        Curabitur consectetur erat eros, sed aliquam tortor 
+        vestibulum ac.Proin in sollicitudin 
         </p>
       </div>
     </>

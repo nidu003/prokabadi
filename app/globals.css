@@ -368,13 +368,16 @@ body {
 
 .paragraph-containerf {
   width: 1492px;
-  height: 220px;
+  height: auto;
   position: absolute;
   top: 2600px; /* Adjusted distance from the top */
-  left: 212px;
-  gap: 0px;
+  left: 212px; /* Position the container to the left */
   opacity: 1;
-  text-align: left;
+  text-align: left; /* Align text to the left */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 10px; /* Space between items */
+  box-sizing: border-box; /* Include padding and border in the element’s total width and height */
 }
 
 .paragraph-containerf p {
@@ -384,19 +387,23 @@ body {
   line-height: 44px;
   color: #38465F;
   margin: 0;
-  padding: 20px;
+  padding: 10px; /* Add padding for spacing */
+  display: inline-block; /* Display paragraphs inline */
+  box-sizing: border-box; /* Include padding in the element’s total width and height */
 }
+
 
 .lorem-text-container {
   width: 1020px; /* Set the width of the container */
   height: auto; /* Height adjusts to fit content */
   position: absolute; /* Positioning the container absolutely */
   top: 3100px; /* Distance from the top (adjust as needed) */
-  left: 300px; /* Move the container slightly to the right */
-  transform: translateX(0%); /* Adjust for horizontal centering if needed */
+  right: 0; /* Move the container to the right edge */
+  transform: translateX(-50%); /* Adjust for horizontal centering */
   display: flex; /* Use flexbox for layout */
-  justify-content: space-around; /* Distribute space around items */
+  justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
+  gap: 0; /* Remove gap between items */
 }
 
 .lorem-text-item-container1 {
@@ -414,13 +421,14 @@ body {
   height: auto; /* Adjust height as needed */
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Center items vertically */
-  padding: 10px; /* Add padding if needed */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
 }
 
 .lorem-text-item {
   font-family: 'Poppins', sans-serif; /* Font family */
   font-size: 20px; /* Font size */
-  font-weight: 500; /* Font weight */
+  font-weight: 700; /* Make text bold */
   color: #2E2754; /* Text color */
   padding: 10px; /* Padding around text */
   text-align: center; /* Center text inside each item */
@@ -429,7 +437,7 @@ body {
 
 /* Adjust spacing between items */
 .lorem-text-item-container + .lorem-text-item-container {
-  margin-left: 5px; /* Decrease spacing between items */
+  margin-left: 0; /* Remove margin between items */
 }
 
 .fact-image-container {
@@ -437,46 +445,63 @@ body {
   height: 500px; /* Set the height of the image container */
   position: absolute; /* Positioning the container absolutely */
   top: 3337px; /* Distance from the top */
-  left: 212px; /* Distance from the left */
+  left: 202px; /* Distance from the left */
   gap: 0px; /* No gap between items */
   opacity: 1; /* Ensure the image container is visible */
 }
 
 .fact-image-container img {
-  width: 732px;
-  height: 500px;
-  left: -0.48px;
-  gap: 0px;
-  opacity: 1;  
+  width: 732px; /* Set the width of the image */
+  height: 500px; /* Set the height of the image */
+  position: relative; /* Relative positioning */
+  left: -20px; /* Move the image 20px to the left */
+  gap: 0px; /* No gap between items */
+  opacity: 1; /* Ensure the image is visible */
 }
 
 .paragraph-containerf2 {
   width: 687px; /* Set width */
-  height: 264px; /* Adjust height to fit content */
+  height: auto; /* Adjust height to fit content */
   position: relative; /* Relative positioning */
   top: 1900px; /* Distance from the top */
-  left: 784px; /* Distance from the left */
+  left: 670px; /* Adjust left position as needed */
+  margin-left: 20px; /* Add some space from the left edge */
   gap: 0px; /* Gap between elements */
   opacity: 1; /* Set opacity */
   font-family: 'Poppins', sans-serif; /* Font family */
-  font-size: 25px; /* Reduced font size */
+  font-size: 25px; /* Font size */
   font-weight: 400; /* Font weight */
   line-height: 30px; /* Adjusted line height for smaller text */
   text-align: left; /* Text alignment */
   color: #38465F; /* Text color */
   padding: 20px; /* Padding inside the container */
   border-radius: 5px; /* Border radius for rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+  overflow: hidden; /* Ensure content does not overflow */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  align-items: center; /* Align items vertically */
 }
 
+.paragraph-containerf2 p {
+  margin: 0; /* Remove default margin */
+  padding: 5px; /* Add padding for spacing */
+  display: inline-block; /* Display paragraphs inline */
+  box-sizing: border-box; /* Include padding in the element’s total width and height */
+}
+
+/* Style for the label before the paragraph */
 .paragraph-containerf2::before {
   content: ""; /* Label text */
   display: block; /* Make label appear on its own line */
   font-family: 'Poppins', sans-serif; /* Font family for label */
-  font-size: 25px; /* Slightly larger font size for the label */
-  font-weight: 400; /* Bold weight for the label */
+  font-size: 25px; /* Font size for the label */
+  font-weight: 400; /* Font weight for the label */
   color: #2E2754; /* Color for the label */
   margin-bottom: 10px; /* Space between label and paragraph text */
 }
+
+
 
 /* Career highlights*/
 
@@ -484,7 +509,7 @@ body {
 .career-container {
   width: 100%; /* Full width */
   padding: 20px; /* Padding around the container */
-  margin: 0 auto; /* Center the container horizontally */
+  margin-left: -50px; /* Center the container horizontally */
   text-align: center; /* Center the text inside the container */
   background-color: #f9f9f9;
 
@@ -558,7 +583,7 @@ body {
 
 /* Heading Styles */
 .highlight-content h3,
- .highlight-content {
+ .highlight-content3 h3{
   font-family: 'Poppins', sans-serif; /* Font family */
   font-size: 25px; /* Font size */
   font-weight: 700; /* Font weight */
@@ -573,17 +598,18 @@ body {
 
 /* Paragraph Styles */
 .highlight-content p,
-.highlight-content3 {
-  margin-top: 20px; /* Move the paragraph down */
-  font-family: 'Poppins', sans-serif; /* Font family */
-  font-size: 25px; /* Font size */
-  font-weight: 500; /* Font weight */
-  line-height: 44px; /* Line height */
-  text-align: left; /* Align text to the left */
-  color: #38465F; /* Text color */
-  padding: 10px; /* Add padding inside the paragraph */
-  border-radius: 5px; /* Optional: Add rounded corners */
+.highlight-content3 p{
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: left;
+  color: #38465F;
+  padding: 10px;
+  border-radius: 5px;
 }
+
 
 /* Highlight 2 and Highlight 4 Styles */
 .highlight2, .highlight4 {
@@ -616,6 +642,7 @@ body {
   opacity: 1; /* Make sure the content is visible */
   font-family: 'Poppins', sans-serif; /* Font family */
   color: #333; /* Text color */
+  margin-top: 30px; /* Adjust this value to move the content down */
 }
 
 /* Heading Styles for Highlight Content 2 and 4 */
@@ -634,7 +661,7 @@ body {
 
 /* Paragraph Styles for Highlight Content 2 and 4 */
 .highlight-content2 p, .highlight-content4 p {
-  margin-top: 20px; /* Move the paragraph down */
+  margin-top: 10px; /* Move the paragraph down */
   font-family: 'Poppins', sans-serif; /* Font family */
   font-size: 25px; /* Font size */
   font-weight: 400; /* Font weight */
