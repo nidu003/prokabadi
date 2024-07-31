@@ -33,7 +33,6 @@ body {
 }
 /*navbar*/
 
-
 body {
   width: 100vw;
   height: auto;
@@ -501,11 +500,8 @@ body {
   margin-bottom: 10px; /* Space between label and paragraph text */
 }
 
-
-
 /* Career highlights*/
 
-/* Career Highlights Container */
 .career-container {
   width: 100%; /* Full width */
   padding: 20px; /* Padding around the container */
@@ -671,8 +667,6 @@ body {
   border-radius: 5px; /* Optional: Add rounded corners */
   color: #38465F; /* Text color */
 }
-
-
 
 /* Link Styles */
 .highlight-content a,
