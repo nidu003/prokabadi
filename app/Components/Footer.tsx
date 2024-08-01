@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <div className="full-screen-image-container-fluid">
+    <div className="full-screen-image-container">
       <Image
         src="/footer.jpg"
         layout="responsive"

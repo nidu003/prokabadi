@@ -14,7 +14,12 @@ const AboutTheJourney = () => {
           />
         </div>
         <div className="header">
-          <h1>ABOUT</h1>
+        <Image
+        src="/About.png" // Update with the correct path to your image
+        alt="About the Journey"
+        width={584} // Set your desired width
+        height={140} // Set your desired height
+         />
           <h2>THE <br/> JOURNEY</h2>
         </div>
         <div className="image-container2">
@@ -25,7 +30,6 @@ const AboutTheJourney = () => {
             height={734.7}
           />
         </div>
-        <div className="triangle"></div>
       </div>
     </div>
   );
